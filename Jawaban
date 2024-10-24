@@ -1,1 +1,18 @@
+// Mario.c
+
+#include <stdio.h>
+
+void main(void) {
+    int height = 6;  // Tinggi piramida
+
+    // Loop untuk setiap baris
+    for (int i = 1; i <= height; i++) {
+        // Loop untuk mencetak tanda #
+        for (int j = 1; j <= i; j++) {
+            printf("#");
+        }
+        // Pindah ke baris berikutnya
+        printf("\n");
+    }
+}
 
