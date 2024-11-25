@@ -1,0 +1,53 @@
+plus_minus (node):
+
+result = 0
+
+#Recursive function to traverse and calculate the sum
+
+def traverse(current_node):
+
+nonlocal result
+
+if current_node.data % 2 == 0: # If even, add the value
+
+result += current_node.data
+
+else: # If odd, subtract the value
+
+result -= current_node.data
+
+for child in current_node.children:
+
+traverse(child)
+
+traverse (node) # Start from the root node
+
+return result
+
+# Find deepest leaf function
+
+def find_deepest_leaf (node):
+
+# Recursive function to find the depth
+
+1
+
+2
+
+def get_depth(current_node):
+
+if not current_node.children: # If a leaf node
+
+3
+
+return 0
+
+4
+
+return 1 + max(get_depth(child) for child in current_node.children)
+
+5
+
+6
+
+return get_depth(node)
